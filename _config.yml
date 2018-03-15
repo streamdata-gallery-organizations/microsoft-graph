@@ -1,6 +1,6 @@
 title: Streamdata Gallery
 url: microsoft-graph.api.streamdata.gallery
-tag: Temmplate
+tag: Microsoft Graph
 markdown: kramdown
 exclude: [".rvmrc", ".rbenv-version", "README.md", "Rakefile", "changelog.md", ".DS_Store"]
 github_user: streamdata-gallery-organizations
