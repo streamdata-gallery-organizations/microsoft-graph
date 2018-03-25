@@ -17,9 +17,9 @@ consumes:
 paths:
   "":
     post:
-      summary: Chart Delete
-      description: 'Chart: delete Deletes the chart object'
-      operationId: Chart:Delete
+      summary: Create Chart
+      description: Create Chart Use this API to create a new Chart
+      operationId: CreateChart
       parameters:
       - in: header
         name: Authorization
@@ -27,6 +27,10 @@ paths:
       responses:
         200:
           description: Successful Response
+          schema:
+            type: array
+            items:
+              $ref: '#/definitions/Chart'
       tags:
       - chart
 definitions:
