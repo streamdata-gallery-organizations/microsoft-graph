@@ -10581,7 +10581,7 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/microsoft-graph/master/_listings/microsoft-graph/workbookworksheetsltidnamegtprotection-get-openapi.md
 - name: Microsoft Graph API Worksheet Protection Protect
   x-api-slug: microsoft-graph-api
-  description: 'WorksheetProtection: protect Protect a worksheet. It throws if the
+  description: 'WorksheetProtection protect Protect a worksheet. It throws if the
     worksheet has been protected.'
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/microsoft-graph.png
   humanURL: https://developer.microsoft.com/en-us/graph/
@@ -10594,7 +10594,7 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/microsoft-graph/master/_listings/microsoft-graph/workbookworksheetsltidnamegtprotectionprotect-post-openapi.md
 - name: Microsoft Graph API Worksheet Protection Unprotect
   x-api-slug: microsoft-graph-api
-  description: 'WorksheetProtection: unprotect Unprotect a worksheet'
+  description: 'WorksheetProtection  unprotect Unprotect a worksheet'
   image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/microsoft-graph.png
   humanURL: https://developer.microsoft.com/en-us/graph/
   baseURL: https://graph.microsoft.com////workbook/worksheets(&lt;id|name&gt;)/protection/unprotect
