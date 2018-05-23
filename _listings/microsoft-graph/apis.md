@@ -10604,22 +10604,6 @@ apis:
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/microsoft-graph/master/_listings/microsoft-graph/workbookworksheetsltidnamegtprotectionunprotect-post-postman.md
   - type: x-openapi-spec
     url: https://raw.githubusercontent.com/streamdata-gallery-organizations/microsoft-graph/master/_listings/microsoft-graph/workbookworksheetsltidnamegtprotectionunprotect-post-openapi.md
-- name: Microsoft Graph API
-  x-api-slug: microsoft-graph-api
-  description: 'Microsoft Graph exposes multiple APIs from Office 365 and other Microsoft
-    cloud services through a single endpoint: https://graph.microsoft.com. Microsoft
-    Graph simplifies queries that would otherwise be more complex. You can use Microsoft
-    Graph to: Access data from multiple Microsoft cloud services, including Azure
-    Active Directory, Exchange Online as part of Office 365, SharePoint, OneDrive,
-    OneNote, and Planner. Navigate between entities and relationships. Access intelligence
-    and insights from the Microsoft cloud (for commercial users).'
-  image: http://kinlane-productions.s3.amazonaws.com/api-evangelist-site/company/logos/microsoft-graph.png
-  humanURL: https://developer.microsoft.com/en-us/graph/
-  baseURL: https://graph.microsoft.com//
-  tags: Microsoft Graph
-  properties:
-  - type: x-openapi-spec
-    url: https://raw.githubusercontent.com/streamdata-gallery-organizations/microsoft-graph/master/_listings/microsoft-graph/openapi.md
 x-common:
 - type: x-change-loge
   url: https://developer.microsoft.com/en-us/graph/docs/overview/changelog
