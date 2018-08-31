@@ -3,7 +3,7 @@ swagger: "2.0"
 x-collection-name: Microsoft Graph
 x-complete: 0
 info:
-  title: Microsoft Graph API User Reminder View
+  title: Microsoft Graph User Reminder View
   description: 'user: reminderView Return a list of calendar reminders within the
     specified start and end times.'
   version: 1.0.0
@@ -395,7 +395,7 @@ paths:
       description: List attachments Retrieve a list of attachment objects attached
         to a message.
       operationId: ListAttachments
-      x-api-path-slug: memailfoldersidchildfoldersidmessagesidattachmentsid-get
+      x-api-path-slug: memailfoldersidchildfoldersid---messagesidattachmentsid-get
       parameters:
       - in: header
         name: Authorization
@@ -414,7 +414,7 @@ paths:
       summary: Add Attachment
       description: Add attachment Use this API to add an attachment to a message.
       operationId: AddAttachment
-      x-api-path-slug: memailfoldersidchildfoldersidmessagesidattachmentsid-post
+      x-api-path-slug: memailfoldersidchildfoldersid---messagesidattachmentsid-post
       parameters:
       - in: header
         name: Authorization
@@ -559,7 +559,7 @@ paths:
         type: string
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       - in: path
         name: id
         type: string
@@ -2113,487 +2113,6 @@ paths:
           description: OK
       tags:
       - Calendar
-  "":
-    post:
-      summary: Chart Delete
-      description: 'Chart: delete Deletes the chart object.'
-      operationId: Chart:Delete
-      x-api-path-slug: post
-      parameters:
-      - in: header
-        name: Authorization
-        description: 'Bearer '
-      responses:
-        200:
-          description: OK
-      tags:
-      - Chart
-    get:
-      summary: Get Chart
-      description: Get Chart Retrieve the properties and relationships of chart object.
-      operationId: GetChart
-      x-api-path-slug: get
-      parameters:
-      - in: header
-        name: Authorization
-        description: 'Bearer '
-      responses:
-        200:
-          description: OK
-      tags:
-      - Chart
-    patch:
-      summary: Update Chart
-      description: Update chart Update the properties of chart object.
-      operationId: UpdateChart
-      x-api-path-slug: patch
-      parameters:
-      - in: header
-        name: Authorization
-        description: 'Bearer '
-      responses:
-        200:
-          description: OK
-      tags:
-      - Chart
-  List, , Collection:
-    get:
-      summary: List Chart Collection
-      description: List ChartCollection Retrieve a list of chart objects.
-      operationId: ListChartCollection
-      x-api-path-slug: list--collection-get
-      parameters:
-      - in: header
-        name: Authorization
-        description: 'Bearer '
-      responses:
-        200:
-          description: OK
-      tags:
-      - List
-      - Chart
-      - Collection
-  List, , Series, Collection:
-    get:
-      summary: List Chart Series Collection
-      description: List ChartSeriesCollection Retrieve a list of chartseries objects.
-      operationId: ListChartSeriesCollection
-      x-api-path-slug: list--series-collection-get
-      parameters:
-      - in: header
-        name: Authorization
-        description: 'Bearer '
-      responses:
-        200:
-          description: OK
-      tags:
-      - List
-      - Chart
-      - Series
-      - Collection
-  ', Series':
-    post:
-      summary: Create Chart Series
-      description: Create ChartSeries Use this API to create a new ChartSeries.
-      operationId: CreateChartSeries
-      x-api-path-slug: series-post
-      parameters:
-      - in: header
-        name: Authorization
-        description: 'Bearer '
-      responses:
-        200:
-          description: OK
-      tags:
-      - Chart
-      - Series
-    get:
-      summary: Get Chart Series
-      description: Get ChartSeries Retrieve the properties and relationships of chartseries
-        object.
-      operationId: GetChartSeries
-      x-api-path-slug: series-get
-      parameters:
-      - in: header
-        name: Authorization
-        description: 'Bearer '
-      responses:
-        200:
-          description: OK
-      tags:
-      - Chart
-      - Series
-  ', Set, Data':
-    post:
-      summary: Chart Set Data
-      description: 'Chart: setData Resets the source data for the chart.'
-      operationId: Chart:SetData
-      x-api-path-slug: set-data-post
-      parameters:
-      - in: header
-        name: Authorization
-        description: 'Bearer '
-      responses:
-        200:
-          description: OK
-      tags:
-      - Chart
-      - Set
-      - Data
-  ', Set, Position':
-    post:
-      summary: Chart Set Position
-      description: 'Chart: setPosition Positions the chart relative to cells on the
-        worksheet.'
-      operationId: Chart:SetPosition
-      x-api-path-slug: set-position-post
-      parameters:
-      - in: header
-        name: Authorization
-        description: 'Bearer '
-      responses:
-        200:
-          description: OK
-      tags:
-      - Chart
-      - Set
-      - Position
-  ', Axis':
-    get:
-      summary: Get Chart Axis
-      description: Get ChartAxis Retrieve the properties and relationships of chartaxis
-        object.
-      operationId: GetChartAxis
-      x-api-path-slug: axis-get
-      parameters:
-      - in: header
-        name: Authorization
-        description: 'Bearer '
-      responses:
-        200:
-          description: OK
-      tags:
-      - Chart
-      - Axis
-  axis:
-    patch:
-      summary: Update Chartaxis
-      description: Update chartaxis Update the properties of chartaxis object.
-      operationId: UpdateChartaxis
-      x-api-path-slug: axis-patch
-      parameters:
-      - in: header
-        name: Authorization
-        description: 'Bearer '
-      responses:
-        200:
-          description: OK
-      tags:
-      - Chartaxis
-  ', Axis, Title':
-    get:
-      summary: Get Chart Axis Title
-      description: Get ChartAxisTitle Retrieve the properties and relationships of
-        chartaxistitle object.
-      operationId: GetChartAxisTitle
-      x-api-path-slug: axis-title-get
-      parameters:
-      - in: header
-        name: Authorization
-        description: 'Bearer '
-      responses:
-        200:
-          description: OK
-      tags:
-      - Chart
-      - Axis
-      - Title
-  axistitle:
-    patch:
-      summary: Update Chartaxistitle
-      description: Update chartaxistitle Update the properties of chartaxistitle object.
-      operationId: UpdateChartaxistitle
-      x-api-path-slug: axistitle-patch
-      parameters:
-      - in: header
-        name: Authorization
-        description: 'Bearer '
-      responses:
-        200:
-          description: OK
-      tags:
-      - Chartaxistitle
-  ', Collection':
-    post:
-      summary: Chart Collection Add
-      description: 'ChartCollection: add Creates a new chart.'
-      operationId: ChartCollection:Add
-      x-api-path-slug: collection-post
-      parameters:
-      - in: header
-        name: Authorization
-        description: 'Bearer '
-      responses:
-        200:
-          description: OK
-      tags:
-      - Chart
-      - Collection
-  ', Collection, Item, At':
-    post:
-      summary: Chart Collection Item At
-      description: 'ChartCollection: ItemAt Gets a chart based on its position in
-        the collection.'
-      operationId: ChartCollection:ItemAt
-      x-api-path-slug: collection-item-at-post
-      parameters:
-      - in: header
-        name: Authorization
-        description: 'Bearer '
-      responses:
-        200:
-          description: OK
-      tags:
-      - Chart
-      - Collection
-      - Item
-      - At
-  ', Data, Labels':
-    get:
-      summary: Get Chart Data Labels
-      description: Get ChartDataLabels Retrieve the properties and relationships of
-        chartdatalabels object.
-      operationId: GetChartDataLabels
-      x-api-path-slug: data-labels-get
-      parameters:
-      - in: header
-        name: Authorization
-        description: 'Bearer '
-      responses:
-        200:
-          description: OK
-      tags:
-      - Chart
-      - Data
-      - Labels
-  datalabels:
-    patch:
-      summary: Update Chartdatalabels
-      description: Update chartdatalabels Update the properties of chartdatalabels
-        object.
-      operationId: UpdateChartdatalabels
-      x-api-path-slug: datalabels-patch
-      parameters:
-      - in: header
-        name: Authorization
-        description: 'Bearer '
-      responses:
-        200:
-          description: OK
-      tags:
-      - Chartdatalabels
-  ', Fill, Clear':
-    post:
-      summary: Chart Fill Clear
-      description: 'ChartFill: clear Clear the fill color of a chart element.'
-      operationId: ChartFill:Clear
-      x-api-path-slug: fill-clear-post
-      parameters:
-      - in: header
-        name: Authorization
-        description: 'Bearer '
-      responses:
-        200:
-          description: OK
-      tags:
-      - Chart
-      - Fill
-      - Clear
-  ', Fill, Set, Solid, Color':
-    post:
-      summary: Chart Fill Set Solid Color
-      description: 'ChartFill: setSolidColor Sets the fill formatting of a chart element
-        to a uniform color.'
-      operationId: ChartFill:SetSolidColor
-      x-api-path-slug: fill-set-solid-color-post
-      parameters:
-      - in: header
-        name: Authorization
-        description: 'Bearer '
-      responses:
-        200:
-          description: OK
-      tags:
-      - Chart
-      - Fill
-      - Set
-      - Solid
-      - Color
-  ', Font':
-    get:
-      summary: Get Chart Font
-      description: Get ChartFont Retrieve the properties and relationships of chartfont
-        object.
-      operationId: GetChartFont
-      x-api-path-slug: font-get
-      parameters:
-      - in: header
-        name: Authorization
-        description: 'Bearer '
-      responses:
-        200:
-          description: OK
-      tags:
-      - Chart
-      - Font
-  font:
-    patch:
-      summary: Update Chartfont
-      description: Update chartfont Update the properties of chartfont object.
-      operationId: UpdateChartfont
-      x-api-path-slug: font-patch
-      parameters:
-      - in: header
-        name: Authorization
-        description: 'Bearer '
-      responses:
-        200:
-          description: OK
-      tags:
-      - Chartfont
-  ', Gridlines':
-    get:
-      summary: Get Chart Gridlines
-      description: Get ChartGridlines Retrieve the properties and relationships of
-        chartgridlines object.
-      operationId: GetChartGridlines
-      x-api-path-slug: gridlines-get
-      parameters:
-      - in: header
-        name: Authorization
-        description: 'Bearer '
-      responses:
-        200:
-          description: OK
-      tags:
-      - Chart
-      - Gridlines
-  gridlines:
-    patch:
-      summary: Update Chartgridlines
-      description: Update chartgridlines Update the properties of chartgridlines object.
-      operationId: UpdateChartgridlines
-      x-api-path-slug: gridlines-patch
-      parameters:
-      - in: header
-        name: Authorization
-        description: 'Bearer '
-      responses:
-        200:
-          description: OK
-      tags:
-      - Chartgridlines
-  ', Legend':
-    get:
-      summary: Get Chart Legend
-      description: Get ChartLegend Retrieve the properties and relationships of chartlegend
-        object.
-      operationId: GetChartLegend
-      x-api-path-slug: legend-get
-      parameters:
-      - in: header
-        name: Authorization
-        description: 'Bearer '
-      responses:
-        200:
-          description: OK
-      tags:
-      - Chart
-      - Legend
-  legend:
-    patch:
-      summary: Update Chartlegend
-      description: Update chartlegend Update the properties of chartlegend object.
-      operationId: UpdateChartlegend
-      x-api-path-slug: legend-patch
-      parameters:
-      - in: header
-        name: Authorization
-        description: 'Bearer '
-      responses:
-        200:
-          description: OK
-      tags:
-      - Chartlegend
-  ', Line, Format, Clear':
-    post:
-      summary: Chart Line Format Clear
-      description: 'ChartLineFormat: clear Clear the line format of a chart element.'
-      operationId: ChartLineFormat:Clear
-      x-api-path-slug: line-format-clear-post
-      parameters:
-      - in: header
-        name: Authorization
-        description: 'Bearer '
-      responses:
-        200:
-          description: OK
-      tags:
-      - Chart
-      - Line
-      - Format
-      - Clear
-  ', Line, Format':
-    get:
-      summary: Get Chart Line Format
-      description: Get ChartLineFormat Retrieve the properties and relationships of
-        chartlineformat object.
-      operationId: GetChartLineFormat
-      x-api-path-slug: line-format-get
-      parameters:
-      - in: header
-        name: Authorization
-        description: 'Bearer '
-      responses:
-        200:
-          description: OK
-      tags:
-      - Chart
-      - Line
-      - Format
-  lineformat:
-    patch:
-      summary: Update Chartlineformat
-      description: Update chartlineformat Update the properties of chartlineformat
-        object.
-      operationId: UpdateChartlineformat
-      x-api-path-slug: lineformat-patch
-      parameters:
-      - in: header
-        name: Authorization
-        description: 'Bearer '
-      responses:
-        200:
-          description: OK
-      tags:
-      - Chartlineformat
-  ', Point':
-    get:
-      summary: Get Chart Point
-      description: Get ChartPoint Retrieve the properties and relationships of chartpoint
-        object.
-      operationId: GetChartPoint
-      x-api-path-slug: point-get
-      parameters:
-      - in: header
-        name: Authorization
-        description: 'Bearer '
-      responses:
-        200:
-          description: OK
-      tags:
-      - Chart
-      - Point
   /workbook/worksheets(&lt;id|name&gt;)/charts(&lt;name&gt;)/series(&lt;undefined&gt;)/points:
     get:
       summary: List Points
@@ -2603,116 +2122,13 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
       tags:
       - List
       - Points
-  ', Points, Collection, Item, At':
-    post:
-      summary: Chart Points Collection Item At
-      description: 'ChartPointsCollection: ItemAt Retrieve a point based on its position
-        within the series.'
-      operationId: ChartPointsCollection:ItemAt
-      x-api-path-slug: points-collection-item-at-post
-      parameters:
-      - in: header
-        name: Authorization
-        description: 'Bearer '
-      responses:
-        200:
-          description: OK
-      tags:
-      - Chart
-      - Points
-      - Collection
-      - Item
-      - At
-  ', Points':
-    post:
-      summary: Create Chart Points
-      description: Create ChartPoints Use this API to create a new ChartPoints.
-      operationId: CreateChartPoints
-      x-api-path-slug: points-post
-      parameters:
-      - in: header
-        name: Authorization
-        description: 'Bearer '
-      responses:
-        200:
-          description: OK
-      tags:
-      - Chart
-      - Points
-  series:
-    patch:
-      summary: Update Chartseries
-      description: Update chartseries Update the properties of chartseries object.
-      operationId: UpdateChartseries
-      x-api-path-slug: series-patch
-      parameters:
-      - in: header
-        name: Authorization
-        description: 'Bearer '
-      responses:
-        200:
-          description: OK
-      tags:
-      - Chartseries
-  ', Series, Collection, Item, At':
-    post:
-      summary: Chart Series Collection Item At
-      description: 'ChartSeriesCollection: ItemAt Retrieves a series based on its
-        position in the collection'
-      operationId: ChartSeriesCollection:ItemAt
-      x-api-path-slug: series-collection-item-at-post
-      parameters:
-      - in: header
-        name: Authorization
-        description: 'Bearer '
-      responses:
-        200:
-          description: OK
-      tags:
-      - Chart
-      - Series
-      - Collection
-      - Item
-      - At
-  ', Title':
-    get:
-      summary: Get Chart Title
-      description: Get ChartTitle Retrieve the properties and relationships of charttitle
-        object.
-      operationId: GetChartTitle
-      x-api-path-slug: title-get
-      parameters:
-      - in: header
-        name: Authorization
-        description: 'Bearer '
-      responses:
-        200:
-          description: OK
-      tags:
-      - Chart
-      - Title
-  title:
-    patch:
-      summary: Update Charttitle
-      description: Update charttitle Update the properties of charttitle object.
-      operationId: UpdateCharttitle
-      x-api-path-slug: title-patch
-      parameters:
-      - in: header
-        name: Authorization
-        description: 'Bearer '
-      responses:
-        200:
-          description: OK
-      tags:
-      - Charttitle
   /me/contacts/{id}:
     delete:
       summary: Delete Contact
@@ -2743,7 +2159,7 @@ paths:
         type: string
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       - in: path
         name: id
         type: string
@@ -2924,7 +2340,7 @@ paths:
       summary: Delete Contact
       description: Delete contact Delete a contact.
       operationId: DeleteContact
-      x-api-path-slug: mecontactfolderidchildfoldersidcontactsid-delete
+      x-api-path-slug: mecontactfolderidchildfoldersid---contactsid-delete
       parameters:
       - in: header
         name: Authorization
@@ -2942,7 +2358,7 @@ paths:
       description: Get contact Retrieve the properties and relationships of a contact
         object.
       operationId: GetContact
-      x-api-path-slug: mecontactfolderidchildfoldersidcontactsid-get
+      x-api-path-slug: mecontactfolderidchildfoldersid---contactsid-get
       parameters:
       - in: header
         name: Authorization
@@ -2959,7 +2375,7 @@ paths:
       summary: Update Contact
       description: Update contact Update the properties of a contact object.
       operationId: UpdateContact
-      x-api-path-slug: mecontactfolderidchildfoldersidcontactsid-patch
+      x-api-path-slug: mecontactfolderidchildfoldersid---contactsid-patch
       parameters:
       - in: header
         name: Authorization
@@ -3053,7 +2469,7 @@ paths:
         type: string
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       - in: path
         name: id
         type: string
@@ -3117,7 +2533,7 @@ paths:
         type: string
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       - in: path
         name: id
         type: string
@@ -4803,7 +4219,7 @@ paths:
         type: string
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       - in: path
         name: id
         type: string
@@ -4936,7 +4352,7 @@ paths:
         type: string
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       - in: path
         name: id
         type: string
@@ -7431,7 +6847,7 @@ paths:
         type: string
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       - in: path
         name: id
         type: string
@@ -7560,7 +6976,7 @@ paths:
         type: string
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       - in: path
         name: id
         type: string
@@ -7759,7 +7175,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -7775,7 +7191,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -7791,7 +7207,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -7807,7 +7223,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -7824,7 +7240,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -7840,7 +7256,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -7856,7 +7272,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -7872,7 +7288,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -7888,7 +7304,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -7904,7 +7320,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -8294,7 +7710,7 @@ paths:
         type: string
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       - in: path
         name: id
         type: string
@@ -8586,7 +8002,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -8600,7 +8016,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -8615,7 +8031,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -8629,7 +8045,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -9869,7 +9285,7 @@ paths:
         type: string
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       - in: path
         name: id
         type: string
@@ -11198,7 +10614,7 @@ paths:
         type: string
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       - in: path
         name: id
         type: string
@@ -11253,7 +10669,7 @@ paths:
         type: string
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       - in: path
         name: id
         type: string
@@ -11308,7 +10724,7 @@ paths:
         type: string
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       - in: path
         name: id
         type: string
@@ -11363,7 +10779,7 @@ paths:
         type: string
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       - in: path
         name: id
         type: string
@@ -11418,7 +10834,7 @@ paths:
         type: string
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       - in: path
         name: id
         type: string
@@ -11473,7 +10889,7 @@ paths:
         type: string
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       - in: path
         name: id
         type: string
@@ -11502,7 +10918,7 @@ paths:
         type: string
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       - in: path
         name: id
         type: string
@@ -11557,7 +10973,7 @@ paths:
         type: string
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       - in: path
         name: id
         type: string
@@ -11583,7 +10999,7 @@ paths:
         type: string
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       - in: path
         name: id
         type: string
@@ -11696,7 +11112,7 @@ paths:
         type: string
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -11742,7 +11158,7 @@ paths:
         type: string
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       - in: path
         name: id|userPrincipalName
         type: string
@@ -11909,7 +11325,7 @@ paths:
         type: string
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       - in: path
         name: id|userPrincipalName
         type: string
@@ -12003,7 +11419,7 @@ paths:
         type: string
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       - in: path
         name: id|userPrincipalName
         type: string
@@ -12159,7 +11575,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -12189,7 +11605,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -12208,7 +11624,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -12614,7 +12030,7 @@ paths:
         type: string
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       - in: path
         name: id|userPrincipalName
         type: string
@@ -12640,7 +12056,7 @@ paths:
         type: string
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       - in: path
         name: id|userPrincipalName
         type: string
@@ -12666,7 +12082,7 @@ paths:
         type: string
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       - in: path
         name: id|userPrincipalName
         type: string
@@ -13418,7 +12834,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -13437,7 +12853,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -13456,7 +12872,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -13476,7 +12892,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -13495,7 +12911,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -13514,7 +12930,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -13530,7 +12946,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -13546,7 +12962,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -13562,7 +12978,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -13578,7 +12994,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -13594,7 +13010,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -13610,7 +13026,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -13626,7 +13042,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -13641,7 +13057,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -13656,7 +13072,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -13672,7 +13088,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -13690,7 +13106,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -13708,7 +13124,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -13726,7 +13142,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -13744,7 +13160,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -13762,7 +13178,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -13782,7 +13198,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -13802,7 +13218,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -13822,7 +13238,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -13839,7 +13255,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -13855,7 +13271,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -13871,7 +13287,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -13887,7 +13303,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -13903,7 +13319,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -13919,7 +13335,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -13935,7 +13351,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -13950,7 +13366,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -13965,7 +13381,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -13980,7 +13396,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -13997,7 +13413,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -14014,7 +13430,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -14032,7 +13448,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -14047,7 +13463,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -14063,7 +13479,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -14078,7 +13494,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -14094,7 +13510,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -14109,7 +13525,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -14124,7 +13540,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -14141,7 +13557,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -14157,7 +13573,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -14174,7 +13590,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -14190,7 +13606,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -14207,7 +13623,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -14223,7 +13639,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -14242,7 +13658,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -14261,7 +13677,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -14280,7 +13696,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -14297,7 +13713,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -14314,7 +13730,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -14332,7 +13748,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -14347,7 +13763,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -14363,7 +13779,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -14378,7 +13794,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -14394,7 +13810,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -14409,7 +13825,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -14425,7 +13841,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -14440,7 +13856,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -14456,7 +13872,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -14471,7 +13887,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -14487,7 +13903,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -14502,7 +13918,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -14519,7 +13935,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -14539,7 +13955,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -14559,7 +13975,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -14578,7 +13994,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -14597,7 +14013,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -14616,7 +14032,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -14635,7 +14051,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -14650,7 +14066,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -14666,7 +14082,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -14681,7 +14097,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -14697,7 +14113,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -14712,7 +14128,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -14727,7 +14143,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -14744,7 +14160,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -14761,7 +14177,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -14801,7 +14217,7 @@ paths:
         type: string
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       - in: path
         name: id
         type: string
@@ -14830,7 +14246,7 @@ paths:
         type: string
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -14853,7 +14269,7 @@ paths:
         type: string
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       - in: path
         name: id
         type: string
@@ -14879,7 +14295,7 @@ paths:
         type: string
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       - in: path
         name: id
         type: string
@@ -15016,7 +14432,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -15034,7 +14450,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -15052,7 +14468,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -15069,7 +14485,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -15086,7 +14502,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -15105,7 +14521,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -15123,7 +14539,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -15138,7 +14554,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -15153,7 +14569,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -15167,7 +14583,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -15182,7 +14598,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -15196,7 +14612,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -15212,7 +14628,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -15231,7 +14647,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -15249,7 +14665,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -15266,7 +14682,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -15283,7 +14699,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -15298,7 +14714,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -15314,7 +14730,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -15329,7 +14745,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -15345,7 +14761,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -15360,7 +14776,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -15376,7 +14792,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -15391,7 +14807,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -15408,7 +14824,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -15425,7 +14841,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -15442,7 +14858,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -15460,7 +14876,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -15478,7 +14894,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -15497,7 +14913,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -15518,7 +14934,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -15537,7 +14953,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -15554,7 +14970,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -15574,7 +14990,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -15593,7 +15009,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -15609,7 +15025,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -15626,7 +15042,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -15641,7 +15057,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -15657,7 +15073,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -15672,7 +15088,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -15688,7 +15104,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -15708,7 +15124,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -15728,7 +15144,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -15746,7 +15162,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -15764,7 +15180,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -15784,7 +15200,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -15803,7 +15219,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -15820,7 +15236,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -15838,7 +15254,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -15858,7 +15274,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -15877,7 +15293,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -15893,7 +15309,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -15910,7 +15326,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -15925,7 +15341,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -15941,7 +15357,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -15956,7 +15372,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -15972,7 +15388,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -15990,7 +15406,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -16007,7 +15423,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -16024,7 +15440,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -16042,7 +15458,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -16062,7 +15478,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -16081,7 +15497,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -16098,7 +15514,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -16117,7 +15533,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -16136,7 +15552,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -16154,7 +15570,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -16171,7 +15587,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -16188,7 +15604,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -16206,7 +15622,7 @@ paths:
       parameters:
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       responses:
         200:
           description: OK
@@ -16826,7 +16242,7 @@ paths:
       description: List contacts Get a contact collection from the default Contacts
         folder of the signed-in user.
       operationId: ListContacts
-      x-api-path-slug: mecontactfolderidchildfoldersidcontacts-get
+      x-api-path-slug: mecontactfolderidchildfoldersid---contacts-get
       parameters:
       - in: header
         name: Authorization

@@ -3,7 +3,7 @@ swagger: "2.0"
 x-collection-name: Microsoft Graph
 x-complete: 0
 info:
-  title: Microsoft Graph API Get Calendar
+  title: Microsoft Graph Get Calendar
   description: |-
     Get calendar
     Retrieve the properties and relationships of calendar object.
@@ -396,7 +396,7 @@ paths:
       description: List attachments Retrieve a list of attachment objects attached
         to a message.
       operationId: ListAttachments
-      x-api-path-slug: memailfoldersidchildfoldersidmessagesidattachmentsid-get
+      x-api-path-slug: memailfoldersidchildfoldersid---messagesidattachmentsid-get
       parameters:
       - in: header
         name: Authorization
@@ -513,7 +513,7 @@ paths:
         type: string
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       - in: path
         name: id
         type: string

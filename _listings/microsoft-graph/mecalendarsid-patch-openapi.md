@@ -3,7 +3,7 @@ swagger: "2.0"
 x-collection-name: Microsoft Graph
 x-complete: 0
 info:
-  title: Microsoft Graph API Update Calendar
+  title: Microsoft Graph Update Calendar
   description: Update calendar Update the properties of calendar object.
   version: 1.0.0
 host: graph.microsoft.com
@@ -394,7 +394,7 @@ paths:
       description: List attachments Retrieve a list of attachment objects attached
         to a message.
       operationId: ListAttachments
-      x-api-path-slug: memailfoldersidchildfoldersidmessagesidattachmentsid-get
+      x-api-path-slug: memailfoldersidchildfoldersid---messagesidattachmentsid-get
       parameters:
       - in: header
         name: Authorization
@@ -511,7 +511,7 @@ paths:
         type: string
       - in: header
         name: Authorization
-        description: 'Bearer '
+        description: Bearer
       - in: path
         name: id
         type: string

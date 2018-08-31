@@ -3,7 +3,7 @@ swagger: "2.0"
 x-collection-name: Microsoft Graph
 x-complete: 0
 info:
-  title: Microsoft Graph API Get Attachment
+  title: Microsoft Graph Get Attachment
   description: |-
     Get attachment
     Read the properties and relationships of an attachment, attached to an event,

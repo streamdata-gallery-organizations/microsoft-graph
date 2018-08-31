@@ -3,7 +3,7 @@ swagger: "2.0"
 x-collection-name: Microsoft Graph
 x-complete: 0
 info:
-  title: Microsoft Graph API List Attachments
+  title: Microsoft Graph List Attachments
   description: List attachments Retrieve a list of attachment objects attached to
     a message.
   version: 1.0.0
@@ -395,7 +395,7 @@ paths:
       description: List attachments Retrieve a list of attachment objects attached
         to a message.
       operationId: ListAttachments
-      x-api-path-slug: memailfoldersidchildfoldersidmessagesidattachmentsid-get
+      x-api-path-slug: memailfoldersidchildfoldersid---messagesidattachmentsid-get
       parameters:
       - in: header
         name: Authorization

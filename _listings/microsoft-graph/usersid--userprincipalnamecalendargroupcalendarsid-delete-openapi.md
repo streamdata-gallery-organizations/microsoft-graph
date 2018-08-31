@@ -3,7 +3,7 @@ swagger: "2.0"
 x-collection-name: Microsoft Graph
 x-complete: 0
 info:
-  title: Microsoft Graph API Delete Calendar
+  title: Microsoft Graph Delete Calendar
   description: |-
     Delete calendar
     Delete a calendar other than the default calendar.
@@ -396,7 +396,7 @@ paths:
       description: List attachments Retrieve a list of attachment objects attached
         to a message.
       operationId: ListAttachments
-      x-api-path-slug: memailfoldersidchildfoldersidmessagesidattachmentsid-get
+      x-api-path-slug: memailfoldersidchildfoldersid---messagesidattachmentsid-get
       parameters:
       - in: header
         name: Authorization
